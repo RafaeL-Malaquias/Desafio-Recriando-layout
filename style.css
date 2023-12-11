@@ -1,4 +1,3 @@
-
 :root {
     --font-first: 'JetBrains Mono', monospace;
     --font-second:  'Open Sans', sans-serif;
@@ -10,6 +9,7 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     background: var(--bg-color);
     text-align: center;
 }
