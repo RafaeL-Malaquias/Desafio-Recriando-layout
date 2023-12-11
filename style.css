@@ -1,3 +1,110 @@
+
+:root {
+    --font-first: 'JetBrains Mono', monospace;
+    --font-second:  'Open Sans', sans-serif;
+    --bg-color:#2C2B3D;
+    --first-color:#00BFA6;
+    --second-color:#C2C2C2;
+    --third-color:#FFFFFF;
+}
 body {
-    
+    margin: 0;
+    padding: 0;
+    background: var(--bg-color);
+    text-align: center;
+}
+
+
+/* nav */
+
+nav {
+    display:  flex;
+    justify-content: space-between;
+    align-items: center ;
+    margin-top: 71px;
+}
+
+ul {
+    font-family: var(--font-first);
+    display: flex;
+    gap: 54px;
+    list-style: none;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 28px;
+    margin-bottom: 20px;
+
+}
+a {
+    text-decoration: none;
+    color: var(--third-color);
+    font-weight: 500; 
+}
+nav ul li a:hover{
+    border-bottom: 1px solid var(--first-color);
+    color: var(--first-color);
+}
+
+main section h1 {
+    color: var(--third-color);
+    font-family: var(--font-first);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    margin-top: 0;
+    margin-bottom: 59px;
+}
+p {
+    color: var(--second-color);
+    font-family: var(--font-second);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+span {
+    color: var(--first-color);
+    font-weight: bold;
+    font-style: normal;
+}
+/* corpo da pagina main e section */
+
+#container {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+}
+main {
+    margin: 109px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* foooter */
+footer {
+    text-align: center;
+    color: var(--third-color);
+    font-family: var(--font-first);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px
+}
+footer a:hover {
+    border-bottom: 1px solid var(--first-color);
+    color: var(--first-color);
+}
+.line {
+    margin: 0 auto;
+    width: 570px;
+    border:  1px solid var(--first-color);
+    margin-bottom: 27px;
+}
+
+#logo-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin: 20px;
 }
